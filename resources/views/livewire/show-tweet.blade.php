@@ -1,5 +1,5 @@
 <div>
-    Show Tweet: {{ $content }}
+    <h1>Show Tweet: {{ $content }}</h1>
 
     <form method="post" wire:submit.prevent = 'create'>
         <input type="text" name="content" id="content" wire:model='content'>
