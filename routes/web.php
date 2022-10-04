@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Livewire\ShowTweet;
+use App\Http\Livewire\User\UploadPhoto;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,6 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('tweets', ShowTweet::class)->name('tweets')->middleware('auth');
+Route::get('uploads', UploadPhoto::class)->name('uploads')->middleware('auth');
 
 Route::middleware([
     'auth:sanctum',
